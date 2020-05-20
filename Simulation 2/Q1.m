@@ -19,13 +19,13 @@ disp(X);
 C = [A, B]; %Concatenate the matrix A and B
 R = round(rref(C), 3); %Perform gaussian elimination
 disp("Using Gaussian Elimination:");
-disp(R(:,7));%Display only the last column
+disp(R(:,7)); %Display only the last column
 
 N = A*1.05;
 Q = [N, B]; %Concatenate the matrix N and B
 Z = round(rref(Q), 3); %Perform gaussian elimination
 disp("Using Gaussian Elimination for 5% increase:");
-disp(Z(:,7));%Display only the last column
+disp(Z(:,7)); %Display only the last column
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,7 +75,7 @@ while done4 == false
         S(i) = (1 / A(i, i)) * (B(i) - x); %Solve each equation to get the new guess
     end
     
-    numIterations = numIterations+1; %increment number of iterations
+    numIterations = numIterations+1; %Increment number of iterations
     
     Error = [100 100 100 100 100 100]';
     
